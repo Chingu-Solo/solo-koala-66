@@ -1,6 +1,6 @@
 # Favorite Fonts
 Tier 1 Chingu project using only vanilla (plain) HTML, CSS, and JavaScript. This app was created as a Chingu Solo Project and list different Google fonts and display sample text.
-
+live at: https://elegant-payne-a01ef0.netlify.com
 # Features
 Font cards display sample text in the corresponding font.
 
