@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html body {
+    
+    box-sizing: border-box;
+    overflow: auto; 
+    display:flex; 
+    flex-direction:column; 
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+a:focus{
+    text-decoration: none;
+    color: black;   
+
+}
+ul{
+    list-style: none;
+}
+header{
+    height: 40px;
+    /* border-bottom: 1px solid grey; */
+    padding: 20px 20px 0px 20px;
+}
+span{
+    color: grey;
+    font-size: 14px;
+}
+#imp{
+    color: grey;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+.logo{
+    display: grid;  
+   grid-template-columns: 5fr 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+.item, .items{
+    width: 100px;      
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+img{
+    /* padding: 10px; */
+    margin: 20px 5px;
+    width: 15px;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+select{
+   border: none;
+    padding: 2px;
+    margin: 8px;
+    width: 150px;
+}
+i{
+    padding: 5px;
+    margin: 20px 0px;
+    /* width: auto; */
+}
+i:hover{
+    outline-style: solid; 
+    outline-color: orangered;  
+}
+
+option{
+    background-color: black;
+    color: white;
+    
+}
+select:focus{
+    outline-color: orangered;
+    outline-style: solid;
+
+}
+
+
+
+.container{
+    display: grid;
+    margin: 20px;
+    grid-template-columns:repeat(7,auto);
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 30px; 
+    min-width:50px;
+    min-height: 0;
+
+}
+input:focus{
+    /* border: 1px solid orangered;
+    outline-width: 0; */
+    outline-color: orangered;
+    outline-style: solid;
+    
+}
+
+
+.fontarea{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2,auto);
+    padding: 20px;
+    margin: 30px;
+    /* border: 1px solid grey; */
+    grid-gap: 40px;
+    height: 450px;
+}
+#myinput{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.list{
+    display: block;
+    padding: 20px;
+    margin: 30px;
+  
+    grid-gap: 40px;
+    height: 450px;
+}
+.heading{
+    border-top: 1px solid black;
+    padding: 20px;
+    
+}
+
+.text{
+    padding: 50px 0px;
+    font-weight: bold;
+}
+
+
+footer{
+    text-align: center;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:40px; 
+    background-color:#f4f4f4f4;
+ }
