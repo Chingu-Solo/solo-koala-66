@@ -15,3 +15,10 @@ A sample text is provided for display. Custom text can be added via the second i
 Font size (20px, 24px, 32px, 40px) can be changed by clicking on the displayed current size
 
 Style Design is fully responsive.
+# How to deploy app
+Clone/Download the zipped project from https://github.com/Chingu-Solo/solo-koala-66
+
+Locate the Project folder on your system, open the folder and click the index.html file.
+
+# Dependencies
+The app uses plain HTML, CSS and Javascript and has no dependencies
