@@ -1,3 +1,4 @@
+//input for type box function
 function updateCardText() {
     updateFontSize();
     var x = document.getElementById("myinput").value;
@@ -10,6 +11,7 @@ function updateCardText() {
     
 }
 
+//font resize
 function updateFontSize() {
     fontSize = document.getElementById("fontlist").value;
     for (i = 1; i < 9; i++) {
@@ -17,6 +19,7 @@ function updateFontSize() {
     }
 }
 
+//reset 
 function reset() {
     document.getElementById("fontlist").value = "20px";
     document.getElementById("myinput").value = "";
@@ -24,11 +27,13 @@ function reset() {
 
 }
 
-
-function grid(x) {
-    x.classList.toggle("fa-window-maximize");
-    var glist  = document.getElementById("grid");
-   var font=document.getElementsByClassName("fontarea")[0];
+//list and grid toogle 
+var font=document.getElementsByClassName("fontarea")[0];
+var fon=document.getElementsByClassName("fontarea")[0];
+var glist  = document.getElementById("grid");
+function grid() {
+    //list view 
+    glist.classList.toggle("fa-window-maximize");
    font.style.display="block";
    font.style.height="100vh";
    font.style.margin="20px";
@@ -38,25 +43,20 @@ function grid(x) {
        document.getElementById("heading"+i).style.padding="20px";
    }
 
-   if(glist.addEventListener){
-       glist.addEventListener("click", function (){
-        var fon=document.getElementsByClassName("fontarea")[0];
+//   grid view 
+//double click to change the view back to grid 
+     glist.addEventListener("dblclick", function (){
         fon.style.display="grid";
        fon.style.padding="20px";
        fon.style.margin="30px";
        fon.style.grid="40px";
        fon.style.height="450px";
-       
-     },false
-
-       
-       );
-       
-   }
-
-   
+      
+     },false );
 }
 
+
+//light mode 
       
 function light(){
 
@@ -71,11 +71,12 @@ function light(){
     document.getElementsByClassName("fa")[1].style.color="black";
     for(i=1; i<9; i++){
         document.getElementById("heading"+i).style.borderTop="1px black solid";
+        document.getElementsByClassName("btn")[i-1].style.backgroundColor="white";
     }
   
 
 }
-
+//dark mode 
 function dark() {
     document.body.style.backgroundColor='black';
     document.body.style.color='grey';
@@ -88,7 +89,9 @@ function dark() {
     document.getElementsByClassName("fa")[0].style.color="grey";
     document.getElementsByClassName("fa")[1].style.color="grey";
     for(i=1; i<9; i++){
-    document.getElementById("heading"+i).style.borderTop="1px grey solid";
+    document.getElementById("heading"+i).style.borderTop="1px grey solid" ;
+    document.getElementsByClassName("btn")[i-1].style.backgroundColor="black";
+
 }
 
     

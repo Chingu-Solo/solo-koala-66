@@ -87,6 +87,11 @@ img{
     border: 1px solid black;
     display: none;
 }
+svg{
+    /* padding: 10px; */
+    
+    display: none;
+}
 select{
    border: none;
     padding: 2px;
@@ -126,7 +131,7 @@ select:focus{
 .container{
     display: grid;
     margin: 20px;
-    grid-template-columns: 1fr  1fr 0.05fr 0.1fr 0fr 0.5fr 0.5fr;
+    grid-template-columns:0.5fr 0.5fr 0.5fr 0fr 0fr 0.5fr 0.5fr; 
     text-align: center;
     border: 1px solid grey;
     border-radius: 30px; 
@@ -169,7 +174,21 @@ input:focus{
 .text{
     padding: 50px 0px;
     font-weight: bold;
+    word-wrap:break-word;
+    word-break: break-all;
 }
+.btn{
+    float: right;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.btn i{
+    float: right;
+    border: none;
+    color: red;
+}
+
 
 
 footer{

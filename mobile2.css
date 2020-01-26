@@ -56,6 +56,7 @@ img{
     border-radius: 50px;
     border: 1px solid black;
 }
+
 select{
    border: none;
     padding: 2px;
@@ -88,7 +89,7 @@ select:focus{
 .container{
     display: grid;
     margin: 20px;
-    grid-template-columns: 1fr  1fr 0.05fr 0.1fr 0fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0fr 0fr 0.5fr 0.5fr; 
     /* background-color: white; */
     text-align: center;
     border: 1px solid grey;
@@ -118,10 +119,8 @@ input:focus{
     grid-gap: 40px;
     height: 450px;
 }
-.plus{
-    padding: 0;
-    
-}
+
+
 .list{
     display: block;
     padding: 20px;
@@ -135,13 +134,25 @@ input:focus{
     padding: 20px;
     
 }
-#pre{
-    float: right;
-}
+
 .text{
     padding: 50px 0px;
     font-weight: bold;
+    word-wrap:break-word;
+    word-break: break-all;
 }
+.btn{
+    float: right;
+    border: none;
+    background-color: white;
+    outline: none;
+}
+.btn i{
+    float: right;
+    border: none;
+    color: red;
+}
+
 
 
 footer{
