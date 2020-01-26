@@ -6,7 +6,9 @@ Font cards display sample text in the corresponding font.
 
 Clicking the reset icon in the upper right corner of major navigation will reset page (clears inputs, and resets size) without reloading the page itself
 
-Clicking the listview icon toggles listview
+Clicking the listview icon toggles Listview/GridView (Default grid view)
+Click list icon to change to list view .
+Double click grid icon to change list view back to grid view 
 
 Clicking the dark/light circles will toggle dark/light modes, respectively
 
